@@ -1,3 +1,4 @@
+import random
 j = 0
 sollist = []
 
@@ -15,8 +16,6 @@ def strand_sort(arr:list)->list:
         index = 0
         i = 0
         while i < len(arr):
-            a = arr[i]
-            a = arr[index]
             if arr[i] > sublist[index]:
                 sublist.append(arr[i])
                 arr.pop(i)
@@ -45,3 +44,7 @@ def strand_sort(arr:list)->list:
         
 
         return strand_sort(arr)
+
+
+arr = [random.randint(0, 999999) for i in range(1000)]
+print(strand_sort(arr))
