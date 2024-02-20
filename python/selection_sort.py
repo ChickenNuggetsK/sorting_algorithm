@@ -6,7 +6,7 @@ def selection_sort(arr:list)->list:
             if arr[j] < arr[min]:
                 min = j
             
-            if min != i:
-                arr[min], arr[i] = arr[i], arr[min]
+        if min != i:
+            arr[min], arr[i] = arr[i], arr[min]
     
     return arr
