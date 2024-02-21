@@ -1,5 +1,5 @@
 def bubble_sort(arr:list)->list:
-    for i in range(len(arr)-1, 1, -1):
+    for i in range(len(arr)-1, 0, -1):
         sorted = True
         
         for j in range(i):
@@ -9,3 +9,4 @@ def bubble_sort(arr:list)->list:
         
         if sorted:
             return arr
+    return arr
